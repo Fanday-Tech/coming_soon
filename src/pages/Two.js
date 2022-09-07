@@ -9,7 +9,7 @@ function Two() {
   const navigate = useNavigate();
 
   function handleClick() {
-    navigate("/coming_soon/home/");
+    navigate("/coming_soon/home");
   }
 
   return (

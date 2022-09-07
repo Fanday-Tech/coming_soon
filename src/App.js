@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from "react";
 import "./styles/App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
 const BlobBG = lazy(() => import("./components/sketch/sketch"));
 const Home = lazy(() => import("./pages/Home"));
@@ -33,8 +33,8 @@ function App() {
         >
           <div className="app">
             <Routes>
-              <Route exact path="/coming_soon/home/" strict element={<ComingSoon />} />
-              <Route exact path="/coming_soon/" strict element={<Home />} />
+              <Route exact path="/coming_soon/home" strict element={<ComingSoon />} />
+              <Route exact path="/coming_soon" strict element={<Home />} />
             </Routes>
           </div>
         </Suspense>
