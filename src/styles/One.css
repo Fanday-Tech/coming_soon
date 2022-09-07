@@ -1,0 +1,78 @@
+.one {
+  scroll-behavior: smooth !important;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1.7fr 0.3fr;
+  /* gap: 2rem; */
+  grid-template-areas:
+    ". . one__text one__text one__text one__text one__text one__text one__text one__text one__text . ."
+    ". . one__button one__button one__button one__button one__button one__button one__button one__button one__button . .";
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  font-family: "Satoshi";
+}
+
+.one__text {
+  grid-area: one__text;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+.one__text > h1 {
+  cursor: default;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 5.82rem;
+  line-height: 119.5%;
+  letter-spacing: -0.02em;
+}
+
+.one__text > h1 > span {
+  /* color: #af72ff; */
+  /* background: linear-gradient(81.77deg, #9d65c9 7.63%, #e85aff 20.87%, #f6851b 31.08%, #e85aff 42.38%, #9d65c9 56.56%); */
+  background: rgb(175, 114, 255);
+  background: linear-gradient(90deg, rgba(175, 114, 255, 1) 0%, rgba(232, 90, 255, 1) 51%, rgba(246, 133, 27, 1) 100%);
+  background-size: 200%;
+  background-clip: text;
+  color: transparent;
+  animation: animatedBg 2s infinite alternate;
+}
+
+@keyframes animatedBg {
+  to {
+    background-position: 100%;
+  }
+}
+
+.one__button {
+  grid-area: one__button;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: -150px;
+}
+
+.one__button > a {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+  font-weight: 700 !important;
+  font-size: 0.82rem;
+  color: black;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(50px);
+  border-radius: 9px;
+  border: 0;
+}

@@ -1,0 +1,61 @@
+.two {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1.5fr;
+  gap: 20px px;
+  grid-template-areas: ". . two__main two__main two__main two__main two__main two__main two__main two__main two__main. .";
+  justify-content: center;
+  align-content: center;
+  justify-items: stretch;
+  align-items: center;
+  font-family: "Satoshi";
+}
+
+.two__main {
+  grid-area: two__main;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.two_launchText {
+  font-weight: 400;
+  font-size: 1.32rem;
+  font-family: "Inter";
+}
+
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 17px 215px;
+  gap: 10px;
+  color: white;
+  background: #000000;
+  box-shadow: 3px 5px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.two__mainImg > img {
+  width: 7.36rem;
+}
+
+
+.two__mainText > p {
+  font-weight: 400;
+  font-size: 1.82rem;
+  font-family: "Inter";
+}
+
+.two__mainText {
+  margin-top: -20px;
+}

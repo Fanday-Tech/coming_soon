@@ -1,0 +1,122 @@
+/* .four {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . . . . . . . . . . . ."
+    ". . . . . . . . . . . . ."
+    ". . . . . . . . . . . . ."
+    ". . . . . . . . . . . . ."
+    ". . . . . . . . . . . . ."
+    "footer footer footer footer footer footer footer footer footer footer footer footer footer";
+} */
+
+
+
+.four {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . . . . . . . . . . . ."
+    ". . four__left four__left four__left . . . . . . . ."
+    ". . four__left four__left four__left . . four__right four__right four__right four__right . ."
+    ". . four__left four__left four__left . . four__right four__right four__right four__right . ."
+    ". . . . . . . . . . . . ."
+    "footer footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+.four__left {
+  grid-area: four__left;
+  display: grid;
+  grid-template-rows: 0.7fr 0.3fr;
+  gap: 40px;
+}
+
+.four__leftText > h1 {
+  font-family: Inter;
+  font-size: 3.82rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.four__leftText > p {
+  margin: 10;
+  font-weight: 400;
+  font-family: Inter;
+  font-size: 0.83rem;
+  line-height: 150%;
+}
+
+.four__leftText > h4 {
+  margin: 0;
+  font-weight: 700;
+  font-family: Inter;
+  font-size: 1.01rem;
+  line-height: 250%;
+}
+
+.four__leftText > h3 {
+  margin: 0;
+  font-weight: 900;
+}
+
+.four__rightText > h4 {
+  margin: 0;
+  font-weight: 700;
+  font-family: Inter;
+  font-size: 1.01rem;
+  line-height: 250%;
+}
+
+
+.four__rightText > h3{
+  margin: 0;
+  font-weight: 900;
+  justify-items: left;
+}
+
+.four__right {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-rows: 0.33fr 0.33fr 0.33fr;
+  gap: 10px;
+  grid-template-areas:
+    ". ."
+    ". ."
+    ". .";
+  grid-area: four__right;
+  justify-content: left;
+  align-content: center;
+  justify-items: left;
+}
+
+.four__rightContainer {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.25);
+  width: 300px;
+  height: 170px;
+  box-sizing: border-box;
+  backdrop-filter: blur(50px);
+  border-radius: 1.23rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px;
+}
+
+.four__rightContainer > h2 {
+  font-weight: 700;
+  font-family: Inter;
+  font-size: 0.91rem;
+}
+
+h1 {
+  margin: 0;
+}

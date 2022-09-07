@@ -1,0 +1,12 @@
+.home {
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  height: 100vh;
+}
+
+.home > div {
+  scroll-snap-align: start;
+  height: 100vh;
+}
